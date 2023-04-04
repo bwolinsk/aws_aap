@@ -27,3 +27,11 @@
     permanent: true
     immediate: true
     state: enabled
+
+- name: Allow traffic for https service
+  ansible.posix.firewalld:
+    service: http
+    permanent: true
+    immediate: true
+    state: enabled
+
