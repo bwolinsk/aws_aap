@@ -1,0 +1,4 @@
+---
+# defaults file for win-configure-demo-webserver
+test_message: "Provisioned Through CFME"
+web_dir: wwwroot

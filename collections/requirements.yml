@@ -3,7 +3,7 @@ collections:
   - amazon.aws
   - f5networks.f5_modules
   - community.general
-
+  - ansible.posix
 roles:
 - name: geerlingguy.nodejs
   source: https://galaxy.ansible.com
