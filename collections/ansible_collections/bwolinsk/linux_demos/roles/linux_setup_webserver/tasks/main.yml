@@ -19,4 +19,5 @@
   ansible.posix.firewalld:
     service: https
     permanent: true
+    immediate: true
     state: enabled
