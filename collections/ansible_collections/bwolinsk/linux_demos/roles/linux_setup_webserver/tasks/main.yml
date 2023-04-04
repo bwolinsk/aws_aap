@@ -5,6 +5,12 @@
     enabled: true
     state: started
 
+- name: Start and enable firewalld service
+  service:
+    name: firewalld
+    state: started
+    enabled: true
+
 - name: create a new directory for the Ansible demo webiste files
   ansible.builtin.file: 
     path: "{{ web_dir }}"
