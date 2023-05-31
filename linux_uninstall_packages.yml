@@ -1,0 +1,6 @@
+---
+- name: Linux Install Packages
+  hosts: all
+  gather_facts: true
+  roles:
+  - bwolinsk.linux_demos.linux_uninstall_packages
