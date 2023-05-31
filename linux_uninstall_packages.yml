@@ -1,6 +1,9 @@
 ---
-- name: Linux Install Packages
+- name: Linux Uninstall Packages
   hosts: all
   gather_facts: true
-  roles:
-  - bwolinsk.linux_demos.linux_uninstall_packages
+  tasks:
+  - name: Uninstall Packages using dnf
+    ansible.builtin.dnf:
+      name: "{{ packages }}" 
+      state: absent
